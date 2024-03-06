@@ -3,10 +3,10 @@ import React, { useState } from "react";
 const Slider = () => {
   const images = [
     "1.jpg",
-  "/img/2.jpg",
-  "/img/3.jpg",
-  "/img/4.jpg",
-  "/img/5.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -26,7 +26,8 @@ const Slider = () => {
   return (
     <div className="slider-container">
       <div className="slider">
-        <img src={`./img/${images[currentImage]}`} alt={`Slide ${currentImage + 1}`} />
+        <img src={require(`./img/${images[currentImage]}`)} alt={`Slide-${currentImage + 1}`} />
+        {/* <img src={`./img/${images[currentImage]}`} alt={`Slide ${currentImage + 1}`} /> */}
         <button className="arrow left-arrow" onClick={prevImage}>
           &#9664;
         </button>
