@@ -1,0 +1,11 @@
+.count-display{
+    background: rgb(150, 194, 150);
+}
+.count-body{
+    background: rgb(87, 136, 85);
+}
+
+/* <CountButton incrementBy={1} buttonColor={"blue"} />
+<CountButton incrementBy={5} buttonColor={"indigo"} />
+<CountButton incrementBy={7} buttonColor={"purple"} />
+<CountButton incrementBy={73} buttonColor={"violet"} /> */
